@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bernard Perez - Portfolio</title>
+</head>
+<body class="light-mode">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z"/>
+        </svg>
+    </button>
+    
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo">Bernard Born T. Perez</a>
+            <nav aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="intro-title">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <h2 id="intro-title">Hi, I'm Bernard Perez</h2>
+                        <p class="lead">
+                            I'm a Third Year student in the program Bachelor of Science of 
+                            Computer Science. This is my personal portfolio website where I 
+                            showcase my projects and skills. This is also my output for the 
+                            subject ITE 18 - Application Development and Emerging 
+                            Technologies under the advisory of Mr. James Earl Cubillas.
+                        </p>
+                        <a class="btn" href="#projects">See my work</a>
+                    </div>
+                    <figure class="profile">
+                        <img src="images/user1.png.jpeg" alt="Bernard Born T. Perez">
+                        <figcaption>Based in Purok 13, Poblacion Prosperidad, Agusan del Sur, PH</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <div class="editable-section" id="about-section">
+                    <button class="edit-button" id="edit-about-btn">Edit</button>
+                    <h2 id="about-title">About Me</h2>
+                    <div id="about-content" contenteditable="false">
+                        <p>I'm a beginner focused on clean, accessible interfaces. I enjoy CSS layout, semantic HTML, and learning by building.</p>
+                        <p>I'm currently exploring the <strong>HTML/CSS</strong> fundamentals and crafting small projects. You can follow my progress on <a href="https://github.com/clauswinklestein" target="_blank" rel="noopener">GitHub</a> or contact me via <a href="mailto:bernardtantuanperez@gmail.com">Gmail</a>.</p>
+                    </div>
+                    <div class="edit-controls" id="about-controls" style="display: none;">
+                        <button class="btn" id="save-about-btn">Save</button>
+                        <button class="btn-outline" id="cancel-about-btn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title">Projects</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Project One</h3>
+                            <p>A brief description of your first project and what technologies you used.</p>
+                            <a href="#" class="btn-outline">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Project Two</h3>
+                            <p>A brief description of your second project and what technologies you used.</p>
+                            <a href="#" class="btn-outline">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Project Three</h3>
+                            <p>A brief description of your third project and what technologies you used.</p>
+                            <a href="#" class="btn-outline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title">Skills</h2>
+                <ul class="chips" role="list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Responsive Design</li>
+                    <li>Git & GitHub</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title">Contact</h2>
+                <address>
+                    You can reach me at <a href="mailto:bernardtantuanperez@gmail.com">bernardtantuanperez@gmail.com</a><br>
+                    Or connect with me on <a href="https://github.com/clauswinklestein" target="_blank" rel="noopener">GitHub</a>
+                </address>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        © <span id="year">2025</span> Your Name. Built with HTML & CSS.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        
+        const savedTheme = localStorage.getItem('theme') || 
+                           (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        
+        if (savedTheme === 'dark') {
+            body.classList.replace('light-mode', 'dark-mode');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light-mode')) {
+                body.classList.replace('light-mode', 'dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.replace('dark-mode', 'light-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('theme')) {
+                if (e.matches) {
+                    body.classList.replace('light-mode', 'dark-mode');
+                } else {
+                    body.classList.replace('dark-mode', 'light-mode');
+                }
+            }
+        });
+
+        const aboutSection = document.getElementById('about-section');
+        const aboutContent = document.getElementById('about-content');
+        const editAboutBtn = document.getElementById('edit-about-btn');
+        const saveAboutBtn = document.getElementById('save-about-btn');
+        const cancelAboutBtn = document.getElementById('cancel-about-btn');
+        const aboutControls = document.getElementById('about-controls');
+        
+        let originalContent = '';
+        
+        editAboutBtn.addEventListener('click', () => {
+            aboutSection.classList.add('editing');
+            originalContent = aboutContent.innerHTML;
+            aboutContent.contentEditable = 'true';
+            aboutControls.style.display = 'flex';
+            editAboutBtn.style.display = 'none';
+            
+            const firstParagraph = aboutContent.querySelector('p');
+            if (firstParagraph) {
+                const range = document.createRange();
+                range.selectNodeContents(firstParagraph);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+        });
+        
+        saveAboutBtn.addEventListener('click', () => {
+            aboutSection.classList.remove('editing');
+            aboutContent.contentEditable = 'false';
+            aboutControls.style.display = 'none';
+            editAboutBtn.style.display = 'block';
+            
+            localStorage.setItem('aboutContent', aboutContent.innerHTML);
+            
+            const originalText = saveAboutBtn.textContent;
+            saveAboutBtn.textContent = 'Saved!';
+            setTimeout(() => {
+                saveAboutBtn.textContent = originalText;
+            }, 1500);
+        });
+        
+        cancelAboutBtn.addEventListener('click', () => {
+            aboutSection.classList.remove('editing');
+            aboutContent.innerHTML = originalContent;
+            aboutContent.contentEditable = 'false';
+            aboutControls.style.display = 'none';
+            editAboutBtn.style.display = 'block';
+        });
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedAboutContent = localStorage.getItem('aboutContent');
+            if (savedAboutContent) {
+                aboutContent.innerHTML = savedAboutContent;
+            }
+        });
+    </script>
+</body>
+</html>
